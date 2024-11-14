@@ -1,0 +1,223 @@
+/* Custom CSS for Personal Website */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    padding-top: 56px; /* Adjust for fixed navbar */
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #1a237e 0%, #0d47a1 100%);
+    padding: 150px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+#about img {
+    object-fit: cover;
+    border: 5px solid #1a237e;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.skill-tags .badge {
+    margin: 0.25rem;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: transform 0.2s ease;
+}
+
+.skill-tags .badge:hover {
+    transform: translateY(-2px);
+}
+
+.bg-info {
+    background-color: #0288d1 !important;
+    color: white !important;
+}
+
+.bg-success {
+    background-color: #2e7d32 !important;
+}
+
+.bg-warning {
+    background-color: #ffd54f !important;
+}
+
+.bg-danger {
+    background-color: #c62828 !important;
+}
+
+.bg-secondary {
+    background-color: #455a64 !important;
+}
+
+#projects .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#projects .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+.social-links a {
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+    color: #90caf9 !important;
+}
+
+.experience h5 {
+    color: #1a237e;
+    margin-bottom: 0.5rem;
+}
+
+.experience ul {
+    padding-left: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.experience li {
+    margin-bottom: 0.5rem;
+}
+
+/* Publications section styling */
+.publications-list {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.publication-item {
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 0.75rem;
+}
+
+.publication-item:hover {
+    background-color: rgba(26, 35, 126, 0.05);
+}
+
+.publication-item h5 {
+    color: #1a237e;
+    margin-bottom: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.publication-item .authors {
+    color: #666;
+    margin-bottom: 3px;
+    font-size: 0.95rem;
+}
+
+.publication-item .journal {
+    color: #333;
+    margin-bottom: 0;
+    font-size: 0.95rem;
+}
+
+.publication-item .journal em {
+    font-weight: 500;
+}
+
+/* Awards section styling */
+.awards-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.award-item {
+    padding: 10px 20px;
+    margin-bottom: 0.5rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.award-item:hover {
+    background-color: rgba(26, 35, 126, 0.05);
+}
+
+.award-item h5 {
+    color: #1a237e;
+    margin-bottom: 4px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.award-description {
+    color: #666;
+    margin-bottom: 0;
+    font-size: 0.95rem;
+}
+
+/* Patents section styling */
+.patents-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.patent-item {
+    padding: 15px 20px;
+    margin-bottom: 0.75rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.patent-item:hover {
+    background-color: rgba(26, 35, 126, 0.05);
+}
+
+.patent-item h5 {
+    color: #1a237e;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.patent-status {
+    color: #666;
+    margin-bottom: 0;
+    font-size: 0.95rem;
+    font-style: italic;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 100px 0;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-section .lead {
+        font-size: 1.2rem;
+    }
+    
+    #about img {
+        width: 200px;
+        height: 200px;
+    }
+}
