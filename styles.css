@@ -202,6 +202,39 @@ body {
     font-style: italic;
 }
 
+/* Blog Section Styles */
+.blog-post {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    transition: transform 0.2s;
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+}
+
+.blog-post h3 {
+    color: #1a237e;
+    margin-bottom: 1rem;
+}
+
+.blog-preview {
+    margin: 1.5rem 0;
+}
+
+.blog-post .btn-outline-primary {
+    border-color: #1a237e;
+    color: #1a237e;
+}
+
+.blog-post .btn-outline-primary:hover {
+    background-color: #1a237e;
+    color: #fff;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .hero-section {
