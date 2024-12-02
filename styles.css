@@ -77,6 +77,25 @@ body {
     box-shadow: 0 12px 24px rgba(0,0,0,0.15);
 }
 
+.project-item {
+    text-align: center;
+    margin-bottom: 50px; /* Increased spacing between projects */
+}
+
+.project-item:first-of-type {
+    margin-top: 50px; /* Additional spacing above the first project */
+}
+
+.project-item .btn-outline-primary {
+    border-color: #007bff;
+    color: #007bff;
+}
+
+.project-item .btn-outline-primary:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
 .social-links a {
     transition: transform 0.3s ease, color 0.3s ease;
     display: inline-block;
